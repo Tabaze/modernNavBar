@@ -160,6 +160,7 @@ p {
 .navbar .dropdown-menu {
   padding: 0;
   background-color: rgba(0, 0, 0, .9);
+  border-radius: 5px;
 }
 .navbar .dropdown-menu .dropdown-item {
   position: relative;
@@ -186,6 +187,12 @@ p {
   background-color: #c0ca33;
   opacity: 0;
   transition: opacity 0.2s ease-in;
+}
+.navbar .dropdown-menu .dropdown-item:last-child:before {
+  border-bottom-left-radius: 5px;
+}
+.navbar .dropdown-menu .dropdown-item:first-child::before {
+  border-top-left-radius: 5px;
 }
 .navbar .dropdown-menu .dropdown-item:hover::before {
   opacity: 1;
@@ -319,3 +326,22 @@ p {
     transform: scaleY(1);
   }
 }
+
+body::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb
+{
+	background-color: #000000;
+	border: 2px solid #555555;
+}
+
