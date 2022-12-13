@@ -344,4 +344,16 @@ body::-webkit-scrollbar-thumb
 	background-color: #000000;
 	border: 1px solid #555555;
 }
+h5 {
+  display: inline-block;
+  padding: 10px;
+  background: #B9121B;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
 
+.full-screen {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
